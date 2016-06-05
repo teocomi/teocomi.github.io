@@ -12,10 +12,11 @@ Just follow the article [How to Debug/Run Navisworks 2013 API Programs](http://l
 1.  Locate the .csproj file of the project you are working on
 2.  Edit it in a text file editor
 3.  Before each *</PropertyGroup>* tag relevant to your scope add the following:
-[xml]
+
+```xml
 <StartAction>Program</StartAction>
 <StartProgram>C:\Program Files\Autodesk\Navisworks Manage 2014\Roamer.exe</StartProgram>
 <StartArguments>PATH TO YOUR NWF FILE TO BE OPENED AUTOMATICALLY (optional)</StartArguments>
-[/xml]
+```
 
 Eventually adjust the path to the Roamer.exe file, and you're ready to go!

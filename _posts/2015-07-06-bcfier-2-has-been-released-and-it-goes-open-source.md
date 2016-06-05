@@ -17,4 +17,4 @@ Check it out from the new dedicated website: [http://bcfier.com/](http://bcfier
 
 Or fork it on [GitHub](https://github.com/teocomi/BCFier).
 
-[![2015-07-05 21_52_20-Autodesk Revit 2015 - Not For Resale Version - [3D View_ {3D} - A+mepdetached.rv](/assets/2015/07/2015-07-05-21_52_20-Autodesk-Revit-2015-Not-For-Resale-Version-3D-View_-3D-A-mepdetached.rv_-470x406.png)](/assets/2015/07/2015-07-05-21_52_20-Autodesk-Revit-2015-Not-For-Resale-Version-3D-View_-3D-A-mepdetached.rv_.png)
+[![img](/assets/2015/07/2015-07-05-21_52_20-Autodesk-Revit-2015-Not-For-Resale-Version-3D-View_-3D-A-mepdetached.rv_-470x406.png)](/assets/2015/07/2015-07-05-21_52_20-Autodesk-Revit-2015-Not-For-Resale-Version-3D-View_-3D-A-mepdetached.rv_.png)

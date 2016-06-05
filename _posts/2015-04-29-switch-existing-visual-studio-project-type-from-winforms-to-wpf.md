@@ -11,9 +11,9 @@ A simple way to do so is to change the *ProjectTypeGuids* in your *.csproj* file
 
 Open the *.csproj* file in a text editor, and add the following line in the first *PropertyGroup* element:
 
-[code lang="xml"]
+```xml
 <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-[/code]
+```
 
 As shown here:
 

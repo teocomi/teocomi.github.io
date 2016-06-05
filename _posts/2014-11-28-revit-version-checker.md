@@ -19,7 +19,7 @@ No need to have Autodesk Revit installed!
 
 ### Download:
 
-*   **[Revit Version Checker 2 (.exe | 11/12/2014 | 91KB) »](http://localhost/matteocominetti/d/RevitVersionChecker2.exe)**
+* [Revit Version Checker 2 (.exe &#124; 11/12/2014 &#124; 91KB) »](/assets/RevitVersionChecker2.exe)
 
 ### Support:
 

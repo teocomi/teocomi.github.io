@@ -5,7 +5,7 @@ date: 2014-12-21 18:22
 categories: [BCF, BIM Workflow]
 tags: [aec, BCF, BIM, future, issue tracking]
 ---
-![Issue-Tracking-e1399595905871](/assets/2014/12/Issue-Tracking-e1399595905871-470x201.png)
+[![Issue-Tracking-e1399595905871](/assets/2014/12/Issue-Tracking-e1399595905871-470x201.png)](/assets/2014/12/Issue-Tracking-e1399595905871-470x201.png)
 
 My friend and coworker Michael has just published the third article of a great series about Issue Tracking for the AEC.
 Funny enough, weeks ago someone claimed [BIMcollab](http://www.bimcollab.com/en/default.aspx) to be the [fist issue tracking system for BIM](http://bimoutsourcing.com/bimcollab-is-the-first-ever-issue-tracking-sytem-for-bim-projects.html). Well, that's not exactly true...

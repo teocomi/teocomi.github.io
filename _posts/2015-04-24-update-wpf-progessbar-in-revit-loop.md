@@ -9,12 +9,13 @@ In WPF, the ProgressBar control is a great control for showing the progress of�
 
 But the [Revit API cannot be used in multithreading](http://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html).
 
-![progress](/assets/2015/04/progress.png)
+[![progress](/assets/2015/04/progress.png)](/assets/2015/04/progress.png)
 
 If you try to set up a BackgroundWorker or a second thread to accomplish you long lasting operation, you will most likely end up having Revit to crash without notice.
 
 A simple solution to allow the ProgressBar to update is the use of a [Dispatcher](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcher%28v=vs.110%29.aspx):
-[code lang="csharp"]
+
+```csharp
 //set up a delegate    
 private delegate void ProgressBarDelegate();
 
@@ -38,4 +39,4 @@ private void UpdateProgress()
 {
   progressBar.Value += 1;
 }
-[/code]  
+```  

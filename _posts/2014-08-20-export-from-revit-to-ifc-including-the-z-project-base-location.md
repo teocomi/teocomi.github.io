@@ -22,8 +22,8 @@ Now the default IFC Export Window of Revit will be replace with a more advanced 
 3.  Check "Include IFCSITE elevation in the site locall placement origin"
 Finally export!
 
-![Export > IFC](/assets/2014/08/2014-08-19-22_20_02--379x470.png)
+[![Export > IFC](/assets/2014/08/2014-08-19-22_20_02--379x470.png)](/assets/2014/08/2014-08-19-22_20_02--379x470.png)
 
-![Check Include IFCSITE](/assets/2014/08/2014-08-19-22_47_56-Autodesk-Revit-2015-Sheet_-A001-Title-Sheet-rac_basic_sample_project.rvt_-470x198.png)
+[![Check Include IFCSITE](/assets/2014/08/2014-08-19-22_47_56-Autodesk-Revit-2015-Sheet_-A001-Title-Sheet-rac_basic_sample_project.rvt_-470x198.png)](/assets/2014/08/2014-08-19-22_47_56-Autodesk-Revit-2015-Sheet_-A001-Title-Sheet-rac_basic_sample_project.rvt_-470x198.png)
 
  

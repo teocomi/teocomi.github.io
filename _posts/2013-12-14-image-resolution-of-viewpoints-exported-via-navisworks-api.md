@@ -14,7 +14,8 @@ I don't know if there is a way to do it from the API, but it is possible by chan
 ![Untitled](/assets/2013/12/Untitled-419x470.png)
 
 The code needed to export the images is the following:
-[csharp]
+
+```csharp
 // get the state of COM
 ComApi.InwOpState10 oState = ComBridge.State;
 // get the IO plugin for image
@@ -32,4 +33,4 @@ oState.DriveIOPlugin("lcodpimage", snapshot, options);
 System.Drawing.Bitmap oBitmap = new System.Drawing.Bitmap(snapshot);
 System.IO.MemoryStream ImageStream = new System.IO.MemoryStream();
 oBitmap.Save(ImageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-[/csharp]
+```
