@@ -1,0 +1,39 @@
+# Site settings
+title: teocomi
+description: 'Matteo Cominetti is a design technologist focusing on BIM, VDC, parametric design and open standards.'
+url: 'http://teocomi.com'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Matteo Cominetti'
+  email: hello@teocomi.com
+  twitter_username: teocomi
+  facebook_username: 
+  github_username:  teocomi
+  linkedin_username:  teocomi
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
