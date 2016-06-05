@@ -124,7 +124,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 82)
+  jekyll
+  jekyll-paginate
+  json
 
 BUNDLED WITH
    1.12.5
