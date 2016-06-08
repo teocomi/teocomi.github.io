@@ -7,7 +7,7 @@ tags: [BCF, clash, export, navisworks]
 ---
 [![case_final_logo_type](/assets/2013/12/case_final_logo_type.png)](http://localhost/matteocominetti/wp-admin/case-inc.com)        [![Navis2BCF3png](/assets/2013/12/Navis2BCF3png.png)](http://apps.case-inc.com/content/free-bcf-exporter-navisworks-manage-2014)
 
-[CASE](case-inc.com) has just release a free Navisworks plugin to export BCF files, check it out on the [CASE App page](http://apps.case-inc.com/content/free-bcf-exporter-navisworks-manage-2014) or just install it from the [CASE Addin Manager](http://apps.case-inc.com/content/add-manager)!
+[CASE](http://case-inc.com) has just release a free Navisworks plugin to export BCF files, check it out on the [CASE App page](http://apps.case-inc.com/content/free-bcf-exporter-navisworks-manage-2014) or just install it from the [CASE Addin Manager](http://apps.case-inc.com/content/add-manager)!
 
 **Description:**
 BCF Exporter allows to export issues found in a Navisworks project according to the BIM Collaboration Format standard by BuildingSMART.
