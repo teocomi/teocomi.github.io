@@ -18,7 +18,7 @@ Recently I had the process "System" using that port, and I couldn't help stoppin
 
 To find out which service is using port 80 do the following:
 
-From a command prompt: Start | Run (type) cmd (click Ok) or Start > All Programs > Accessories > Command Prompt
+From a command prompt: Start > Run (type) cmd (click Ok) or Start > All Programs > Accessories > Command Prompt
 
 Type the following and press enter:
 `netstat -b -a`

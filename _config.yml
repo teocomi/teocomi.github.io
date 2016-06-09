@@ -1,5 +1,6 @@
 # Site settings
-title: teocomi
+title: 'teocomi | Matteo Cominetti'
+shorttitle: teocomi
 description: 'Matteo Cominetti is a design technologist focusing on BIM, VDC, parametric design and open standards.'
 url: 'http://teocomi.com'
 baseurl: '/'
