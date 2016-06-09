@@ -3,7 +3,7 @@ layout: post
 title: "Anti-Spoof on your Google Apps email"
 date: 2012-12-23 14:05
 categories: [Tips&amp;Tricks]
-tags: [dkim, dmarc, email, fake email, gmail, google apps, spf, spoof, spoofing]
+tags: [email, spoofing]
 ---
 I recently started receiving some *Delivery Status Notification* or *automatic response* emails from messages I have never sent. Expanding the details I noticed that they were all replies to emails sent by addresses like this: E7F35AED@mydomain.com (were mydomain.com is actually a domain of mine I use under Google Apps). I was receiving them because I set my own email *myemail@mydomain.com* as a *[catch-all address](http://support.google.com/a/bin/answer.py?hl=en&answer=33962)* so that all emails sent to not existing addresses *@mydomain.com* would be forwarded to my main email address.
 

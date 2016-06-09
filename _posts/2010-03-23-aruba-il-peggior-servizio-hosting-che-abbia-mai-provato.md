@@ -2,8 +2,8 @@
 layout: post
 title: "Aruba: il peggior servizio hosting che abbia mai provato"
 date: 2010-03-23 05:07
-categories: [Web services]
-tags: [aruba, commento, cosiglio, dominio, economico, host, hosting, miglior, peggiore, recensione, server, servizio]
+categories: [web]
+tags: [aruba, hosting, review]
 ---
 Lo ammetto, non sono di certo uno esperto in materia, ma comunque finora ho avuto modo di provare diversi servizi hosting. Tra questi il famoso "Aruba" che qua in Italia va per la maggiore, perchè considerato molto economico, ma ecco tre semplici motivi per cui ve lo sconsiglio altamente:
 

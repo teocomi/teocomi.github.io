@@ -3,7 +3,7 @@ layout: post
 title: "360 VR Panorama Workflow"
 date: 2013-05-23 12:44
 categories: [Panorama]
-tags: [360, Equirectangular, Panorama,VR]
+tags: [how to,panorama,VR]
 ---
 I've been asked many times how I do take [these panorama](https://www.google.com/maps/contrib/100316409139267860520/photos/). If you google *360x180, virtual reality, equirectangular panorama, spherical panorama* and so on you will find many different tutorials. Each method depends on the result you want to achieve, your equipment and your own preference. Following the key steps of my workflow, the main stages are three:
 
@@ -17,7 +17,7 @@ It's quite obvious that in order to capture a full sphere of what is surrounding
 
 [![](/assets/2011/04/IMG_4765-620x365.jpg)](/assets/2011/04/IMG_4765-620x365.jpg) My equipment: fisheye, tripod and bonehead.
 
-A panoramic head is something completely different from a normal tripod head and it is the only way to get good panorama. In order to better understand how a panoramic head works you should read my articles about [how to detect the nodal point of a lens](http://teocomi/detect-the-nodal-point-of-your-lens-how-to/) and about [my custom built pano head](http://teocomi/bonehead-a-custom-built-panoramic-head/). Of course there are many professional heads on the market, but they are very pricey (and in my opinion they are much less practical than my bone head!).
+A panoramic head is something completely different from a normal tripod head and it is the only way to get good panorama. In order to better understand how a panoramic head works you should read my articles about [how to detect the nodal point of a lens](http://teocomi.com/detect-the-nodal-point-of-your-lens-how-to/) and about [my custom built pano head](http://teocomi.com/bonehead-a-custom-built-panoramic-head/). Of course there are many professional heads on the market, but they are very pricey (and in my opinion they are much less practical than my bone head!).
 
 A very important detail about this step is to always shoot in manual mode, you should manually set aperture, speed, ISO and white balance so that the final result will be homogeneous. In case of high contrast scenes I suggest using also the [HDR technology](http://www.stuckincustoms.com/hdr-photography/), in order not to have completely black or white parts.
 

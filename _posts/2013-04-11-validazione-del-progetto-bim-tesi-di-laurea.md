@@ -3,32 +3,10 @@ layout: post
 title: "Validazione del Progetto BIM - Tesi di Laurea"
 date: 2013-04-11 17:55
 categories: [BIM]
-tags: [bcf, bim, IFC, interoperabilità, Revit, Solibri, validazione progetto]
+tags: [bcf, bim, IFC, thesis]
 ---
 ![City-landscape-070](/assets/2013/04/City-landscape-070-470x264.jpg)
-Il giorno 26 Marzo 2013 mi sono laureato in Ingegneria Edile/Architettura presso l'Università di Bologna. Titolo della tesi: *"Project Validation using BIM"*. Di seguito un estratto della stessa per presentarne i contenuti, da leggere seguendo le slide della [presentazione PDF allegata](#presentazione).
-
-### Indice
-
-1.  [Download della presentazione](#presentazione)
-2.  [<span style="line-height: 13px;">SLIDE 3: Il BIM</span>](#bim)
-3.  [SLIDE 4](#4)
-4.  [SLIDE 5](#5)
-5.  [SLIDE 6](#6)
-6.  [SLIDE 7: Validazione del Progetto](#validazione)
-7.  [SLIDE 8](#8)
-8.  [SLIDE 9](#9)
-9.  [SLIDE 10: Interoperabilità](#interoperabilita)
-10.  [SLIDE 11](#11)
-11.  [SLIDE 12: Revit BCF Plugin](#bcf)
-12.  [SLIDE 13](#13)
-13.  [Video del funzionamento base di Revit BCF Plugin](#video)
-14.  [Maggiorni informazioni e download di Revit BCF Plugin](#bcfinfo)
-15.  [Altro](#altro)
-
-### Download della presentazione
-
-[thesis_BIMvaliation_presentation.pdf](/assets/d/thesis_BIMvaliation_presentation.pdf) (PDF 3MB).
+Il giorno 26 Marzo 2013 mi sono laureato in Ingegneria Edile/Architettura presso l'Università di Bologna. Titolo della tesi: *"Project Validation using BIM"*. Di seguito un estratto della stessa per presentarne i contenuti, da leggere seguendo le slide della presentazione PDF allegata [thesis_BIMvaliation_presentation.pdf](/assets/d/thesis_BIMvaliation_presentation.pdf) (PDF 3MB)..
 
 ### == SLIDE 3: IL BIM ==
 
@@ -116,7 +94,7 @@ httpv://youtu.be/1fIob3IoA18
 
 ### Maggiorni informazioni e download di Revit BCF Plugin
 
-[Revit BCF Plugin.](http://localhost/teocomi/code/bcf-revit-plugin/)
+[Revit BCF Plugin.](http://teocomi.com/bcfier)
 
 ### Altro
 

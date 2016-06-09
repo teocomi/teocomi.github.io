@@ -3,7 +3,7 @@ layout: post
 title: "Copertura segnali TIM, Vodafone, Wind e 3"
 date: 2012-12-14 15:27
 categories: [Tips&amp;Tricks]
-tags: [Copertura]
+tags: [telefonia]
 ---
 Vuoi cambiare operatore telefonico e cerchi quello con la migliore copertura 2G/3G/4G nella tua zona?
 

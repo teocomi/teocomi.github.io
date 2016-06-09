@@ -2,8 +2,8 @@
 layout: post
 title: "BCFier 2 has been released and it goes Open Source!"
 date: 2015-07-06 02:45
-categories: [BCF Revit Plugin]
-tags: [BCF, BCFier]
+categories: [bcf]
+tags: [bcf, bcfier]
 ---
 I'm glad to announce that BCFier 2 has been released and from now on it will be Open Source.
 

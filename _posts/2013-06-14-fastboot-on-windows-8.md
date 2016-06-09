@@ -3,7 +3,7 @@ layout: post
 title: "Fastboot Xperia drivers on Windows 8"
 date: 2013-06-14 18:49
 categories: [Android]
-tags: [adb, driver, fastboot, flashtool, install, windows 8, xperia]
+tags: [adb, fastboot, flashtool]
 ---
 If you have updated to Windows 8 you might have had difficulties installing Fastboot and adb drivers for Xperia devices, here a way to do it thanks to [aslike2](http://forum.xda-developers.com/showpost.php?p=38774478&postcount=7) on [XDA](http://forum.xda-developers.com/showthread.php?t=2170114):
 

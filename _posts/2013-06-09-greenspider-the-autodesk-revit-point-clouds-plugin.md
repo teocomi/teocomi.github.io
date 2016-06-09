@@ -2,8 +2,8 @@
 layout: post
 title: "GreenSpider - The Autodesk Revit point clouds plugin"
 date: 2013-06-09 12:46
-categories: [Revit Tools]
-tags: [BIM, GreenSpider, Laser Scanner, Plugin, Point Cloud, Revit API]
+categories: [tools]
+tags: [BIM, GreenSpider, Revit]
 ---
 ![gsp21](/assets/2013/06/gsp21.png)
 

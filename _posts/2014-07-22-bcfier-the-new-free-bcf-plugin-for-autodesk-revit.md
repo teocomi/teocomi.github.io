@@ -2,8 +2,8 @@
 layout: post
 title: "BCFier: the new Free BCF Plugin for Autodesk Revit "
 date: 2014-07-22 20:24
-categories: [App Updates, BCF, BCF Revit Plugin]
-tags: [BCF, BCF Revit Plugin, BCFier, free, Revit]
+categories: [tools]
+tags: [bcf, bcfier, Revit]
 ---
 What was known as the free *"BCF Plugin for Revit"* has now a new name (like it or not), interface and features. I could finally find the time to update it and give it some love. 
 

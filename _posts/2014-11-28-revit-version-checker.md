@@ -1,13 +1,13 @@
 ---
-layout: page
+layout: post
 title: "Revit Version Checker 2.0"
 date: 2014-11-28 19:14
-categories: []
-tags: []
+categories: [revit]
+tags: [revit, version, check]
 ---
 [![logo](/assets/2014/11/logo.png)](/assets/2014/11/logo.png)
 
-**Revit Version Checker** is a simple standalone Windows app to check the version of your Autodesk Revit files (.rvt and .rfa).
+Reveche is **REvit VErsion CHEcker**, a simple standalone Windows app to check the version of your Autodesk Revit files (.rvt and .rfa).
 
 Simply **Drag&Drop** a bunch of files or folders on the main Window and choose if to Append, Prepend or Clean the file name of the YEAR version.
 

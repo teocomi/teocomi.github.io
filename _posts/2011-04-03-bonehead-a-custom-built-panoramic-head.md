@@ -3,11 +3,11 @@ layout: post
 title: "BoneHead - A custom built panoramic head"
 date: 2011-04-03 12:36
 categories: [Panorama]
-tags: [360, bonehead, Panorama, panoramic head, VR]
+tags: [bonehead, panorama, head, VR]
 ---
-**IMPORTANT UPDATE -> [360 VR Panorama Workflow](http://teocomi/360-vr-panorama-workflow/)**
+**IMPORTANT UPDATE -> [360 VR Panorama Workflow](http://teocomi.com/360-vr-panorama-workflow/)**
 
-You may have already read my post on how to [build your own pano-head](http://teocomi/build-your-own-pano-head/), but this time I will show you a completely new way to do so. The pano-head built in the link above was great, but I wanted something better, in particular I wanted something much faster to use!
+You may have already read my post on how to [build your own pano-head](http://teocomi.com/build-your-own-pano-head/), but this time I will show you a completely new way to do so. The pano-head built in the link above was great, but I wanted something better, in particular I wanted something much faster to use!
 
 ### The name
 
@@ -30,8 +30,8 @@ I'm sorry but I'm not able to provide detailed instructions and images on how I 
 *   an L bracket
 *   fibreglass
 *   various screws and tools
-I simply used the tube and the L bracket from [my former pano-head](http://teocomi/build-your-own-pano-head/), I just bended it accordingly and put some rubber on the screw coming out from the tube, but I promised myself I'll find a better solution!
-Then it comes the more complex part: [find the nodal point of your lens](http://teocomi/detect-the-nodal-point-of-your-lens-how-to/).
+I simply used the tube and the L bracket from [my former pano-head](http://teocomi.com/build-your-own-pano-head/), I just bended it accordingly and put some rubber on the screw coming out from the tube, but I promised myself I'll find a better solution!
+Then it comes the more complex part: [find the nodal point of your lens](http://teocomi.com/detect-the-nodal-point-of-your-lens-how-to/).
 
 **Since my BoneHead is being use at the same time for the 6 horizontal shots and the zenith one, I hade to make sure that the nodal point did coincide in both configurations!**
 

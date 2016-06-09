@@ -2,8 +2,8 @@
 layout: post
 title: "Detect the nodal point of your lens [How to]"
 date: 2010-04-18 20:32
-categories: [Panorama, Tips&amp;Tricks]
-tags: [360, camera, detect, lens, nodal point, Panorama, parallax, pivot point, rotation point]
+categories: [how-to]
+tags: [camera, nodal point, panorama]
 ---
 ***EDIT:** In the following article I am erroneously talking of "nodal point" but the correct term is no-parallax-point or entrance pupil, infact:
 

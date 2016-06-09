@@ -3,7 +3,7 @@ layout: post
 title: "The Future of Issue Tracking for the AEC [collectiveBIM]"
 date: 2014-12-21 18:22
 categories: [BCF, BIM Workflow]
-tags: [aec, BCF, BIM, future, issue tracking]
+tags: [aec, bcf, bim, issue tracking]
 ---
 [![Issue-Tracking-e1399595905871](/assets/2014/12/Issue-Tracking-e1399595905871-470x201.png)](/assets/2014/12/Issue-Tracking-e1399595905871-470x201.png)
 

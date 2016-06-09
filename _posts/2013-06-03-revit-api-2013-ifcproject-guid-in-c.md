@@ -3,7 +3,7 @@ layout: post
 title: "Revit API 2013 IfcProject Guid in C#"
 date: 2013-06-03 09:46
 categories: [Revit 2013 API]
-tags: [C#, GUID, IFC, ifcproject, project, Revit API]
+tags: [C#, GUID, IFC, Revit]
 ---
 Using Revit API version 2013 in order to get the IfcGuid of the current project it is possible to use the following code:
 

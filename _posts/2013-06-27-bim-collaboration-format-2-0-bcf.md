@@ -3,7 +3,7 @@ layout: post
 title: "BIM Collaboration Format 2.0 (BCF)"
 date: 2013-06-27 10:45
 categories: [BCF]
-tags: [BCF, BIM, BIM Collaboration Format, buildingSMART, IFC]
+tags: [BCF, BIM, buildingSMART, IFC]
 ---
 This is a follow up to my post on [BIM Collaboration Format](http://localhost/matteocominetti/bim-collaboration-format/). I've gathered here some information found online, special thanks to Lars Bjørkhaug and Rasso Steinmann on LinkedIn.
 

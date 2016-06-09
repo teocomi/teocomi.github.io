@@ -3,7 +3,7 @@ layout: post
 title: "Export from Revit to IFC including the Z Project Base Location"
 date: 2014-08-20 02:54
 categories: [IFC]
-tags: [elevation, export, IFC, IFCSITE, project base location, Revit, z]
+tags: [elevation, export, IFC, Revit]
 ---
 There are different ways to export from Revit to IFC, here I'll show a way to preserve correctly all the Project Base Location settings of your project, especially the Elevation (Z coordinate) otherwise usually excluded.
 

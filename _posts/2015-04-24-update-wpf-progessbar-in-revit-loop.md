@@ -2,8 +2,8 @@
 layout: post
 title: "Update WPF ProgessBar in Revit loop"
 date: 2015-04-24 20:59
-categories: [C#, Revit API]
-tags: [C#, delegate, dispatcher, loop, progress, progressbar, Revit, Revit API, WPF]
+categories: [c#, Revit]
+tags: [c#, delegate, dispatcher, progress, Revit]
 ---
 In WPF, the ProgressBar control is a great control for showing the progress of an operation. If you have already used it in a non Revit context, you probably know that in order to update the UI during a lengthy task [you need to have this logic on a different thread than the main one](http://www.wpf-tutorial.com/misc-controls/the-progressbar-control/).
 

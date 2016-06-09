@@ -2,8 +2,8 @@
 layout: post
 title: "Autodesk 2014 products direct download links"
 date: 2013-07-07 08:50
-categories: [App Updates]
-tags: []
+categories: [tools]
+tags: [autodesk, download]
 ---
 Version 2014 of Autodesk products introduces a new interface for installing its trials, but it often (if not always) returns a “Network Failure” error.
 

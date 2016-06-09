@@ -3,7 +3,7 @@ layout: post
 title: "Debugging Navisworks Plugins in Visual Studio Express"
 date: 2013-11-16 19:41
 categories: [Navisworks API]
-tags: []
+tags: [debug, navisworks, visual studio]
 ---
 If you have been programming with Revit APIs you probably already know what we are going to do since the process is very similar to [Debugging Revit APIs in Visual Studio Express](http://thebuildingcoder.typepad.com/blog/2010/07/debugging-in-visual-studio-2010-express.html).
 

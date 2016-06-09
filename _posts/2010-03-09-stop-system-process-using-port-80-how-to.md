@@ -2,8 +2,8 @@
 layout: post
 title: "Stop &quot;System&quot; process using port 80 [How To] "
 date: 2010-03-09 07:30
-categories: [Tips&amp;Tricks]
-tags: [80, apache, local, port 80, process, server, system, wamp, xampp]
+categories: [how-to]
+tags: [apache, port, xampp]
 ---
 Running [XAMPP or WAMP as local web servers](http://blog.teocomi.com/run-a-local-web-server-easily/) is extremely useful to test websites, but sometimes it gets pretty annoying when other processes use port 80 (i.e. skype) so that Apache can't start.
 Recently I had the process "System" using that port, and I couldn't help stopping it! Finilally google gave me the right solution:

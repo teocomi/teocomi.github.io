@@ -2,8 +2,8 @@
 layout: post
 title: "Invalid variable name deserializing JSON in C#"
 date: 2014-05-03 15:58
-categories: [C#]
-tags: [api, AvatarUrls, C#, deserialize, invalid, jira, json, name, number, response, restsharp, variable]
+categories: [c#]
+tags: [c#, deserialize, json, restsharp]
 ---
 When building apps that connect to web services APIs I often use [json2csharp](http://json2csharp.com/) to automatically create C# classes from a JSON response and [RestSharp](http://restsharp.org/) (PM> Install-Package RestSharp) as REST client library. 
 But recently pasting the following (from Atlassian's Jira APIs):

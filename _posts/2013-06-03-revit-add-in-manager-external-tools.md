@@ -2,8 +2,8 @@
 layout: post
 title: "Revit Add-In Manager -  External Tools"
 date: 2013-06-03 11:45
-categories: [Revit API]
-tags: [add-in manager, debug, external tools, Revit API, Revit SDK]
+categories: [Revit]
+tags: [addin, debug, external tools, Revit]
 ---
 I always forget how and where to get the Revit Add-In Manager, that "External tools" ribbon in your Add-Ins tab. Essential tool if you want to [debug your Add-In without restarting Revit](http://thebuildingcoder.typepad.com/blog/2011/05/debugging-an-add-in-without-restarting-revit.html) each time. It is as simple as it follows:
 

@@ -3,11 +3,11 @@ layout: post
 title: "BIM Collaboration Format (BCF)"
 date: 2013-06-03 10:51
 categories: [BCF]
-tags: [BCF, BIM, BIM Collaboration Format]
+tags: [BCF, BIM]
 ---
 ![schemi-tesi4](/assets/2013/06/schemi-tesi4-470x265.jpg)
 
-**UPDATE: [BIM Collaboration Format 2.0 (BCF)](http://teocomi.com/2013/bim-collaboration-format-2-0-bcf/)**
+**UPDATE: [BIM Collaboration Format 2.0 (BCF)](http://teocomi.com/bim-collaboration-format-2-0-bcf/)**
 
 Tekla Corporation and Solibri, Inc. have introduced to the [buildingSMART organization](http://www.buildingsmart-tech.org/) an idea of using open standards to enable workflow communication between different BIM (Building Information Modeling) software tools. These firms have developed such a XML schema, called [BIM Collaboration Format (BCF)](http://www.buildingsmart-tech.org/specifications/bcf-releases/bcf-intro), to encode messages that inform a software package of issues found in the BIM model by another software tool. The implication is that only those issues and not the entire BIM need to be communicated between software and that this simple capability will enable a degree of collaboration.
 

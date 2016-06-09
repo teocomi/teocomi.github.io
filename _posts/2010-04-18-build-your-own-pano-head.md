@@ -2,8 +2,8 @@
 layout: post
 title: "Build your own pano-head"
 date: 2010-04-18 22:15
-categories: [Panorama]
-tags: [better, build, cheap, create, custom, head, homemade, light, make, metal, pano-head, panohead, Panorama, panoramic head, rotator, simple, tokina 10-17, tripod]
+categories: [photo]
+tags: [custom, head, panorama]
 ---
 **IMPORTANT UPDATE -> [The BoneHead, a custom built pano-head](http://teocomi/bonehead-a-custom-built-panoramic-head)**
 

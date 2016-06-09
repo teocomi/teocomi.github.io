@@ -2,8 +2,8 @@
 layout: post
 title: "BCF has an icon!"
 date: 2014-01-05 03:15
-categories: [BCF]
-tags: [BCF, BIM Collaboration Format, icon]
+categories: [bcf]
+tags: [bcf, icon]
 ---
 ![BCF Icon](/assets/2014/01/BCFicon128.png)
 

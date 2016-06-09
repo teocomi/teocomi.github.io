@@ -2,8 +2,8 @@
 layout: post
 title: "Starting a transaction from an external application running outside of API context is not allowed."
 date: 2013-07-04 19:16
-categories: [Revit 2014 API]
-tags: [external event, Revit API, start, transaction]
+categories: [Revit]
+tags: [external event, Revit, transaction]
 ---
 If you got here by googling the error above you are in the right place.
 

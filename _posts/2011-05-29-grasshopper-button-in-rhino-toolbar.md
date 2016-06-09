@@ -3,7 +3,7 @@ layout: post
 title: "Grasshopper button in Rhino toolbar"
 date: 2011-05-29 15:39
 categories: [Softwares, Tips&amp;Tricks]
-tags: [add, grasshopper, icon, insert, rhino, shortcut, tool, toolbar]
+tags: [grasshopper, icon, shortcut, toolbar]
 ---
 Have you ever wished to speed up launching Grasshopper from Rhino? Well here is a simple tip to add a *'Grasshopper button*' to your toolbar, just one click and you're done!
 

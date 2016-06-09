@@ -2,8 +2,8 @@
 layout: post
 title: "Revit API 2013 get UniqueId from IfcGuid and from Guid"
 date: 2013-06-03 09:44
-categories: [Revit 2013 API]
-tags: [GUID, IFC, IfcGuid, LINQ, Revit API, SMC, Solibri, UniqueId]
+categories: [Revit]
+tags: [GUID, IFC, revit, UniqueId]
 ---
 As you can read from [Jeremy's blog](http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html) there is not a straight way to convert an IfcGuid or a normal Guid to Revit's UniqueId. But given an UniqueId it is possible to convert it to the two other formats.
 So a way to find out the UniqueId related to a specific IfcGuid  or Guid is to check all Revit's elements.

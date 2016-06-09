@@ -3,7 +3,7 @@ layout: post
 title: "How to download Flickr protected photos"
 date: 2011-06-16 23:06
 categories: [Tips&amp;Tricks]
-tags: [download, flickr, image, photo, picture]
+tags: [download, flickr, image, photo]
 ---
 Nothing on the internet is safe, especially if it's protected!
 

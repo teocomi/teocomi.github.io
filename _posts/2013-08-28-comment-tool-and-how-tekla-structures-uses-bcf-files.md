@@ -2,8 +2,8 @@
 layout: post
 title: "Comment Tool and how Tekla Structures uses BCF files"
 date: 2013-08-28 12:06
-categories: [App Updates]
-tags: [BCF, comment tool, Tekla]
+categories: [tools]
+tags: [BCF, Tekla]
 ---
 Tekla Corporation has been pioneer in the development and adoption of the BIM Collaboration Format:
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Switch existing Visual Studio project type from WinForms to WPF"
 date: 2015-04-29 13:27
-categories: [C#]
-tags: [project, type, visual studio, WinForm, WPF]
+categories: [c#]
+tags: [project, visual studio, WinForm, WPF]
 ---
 It may happen that you are working on a Visual Studio project that was initially set up for Windows Forms, and now you want to insert some cool WPF controls, but these won't show up when clicking the "Add..." button.
 

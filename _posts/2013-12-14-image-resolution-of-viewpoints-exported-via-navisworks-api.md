@@ -3,7 +3,7 @@ layout: post
 title: "Image resolution of Viewpoints exported via Navisworks API"
 date: 2013-12-14 20:41
 categories: [Navisworks API]
-tags: [api, clash, export, image, navisworks, resolution, size, snapshot, viewpoint]
+tags: [export, image, navisworks, resolution]
 ---
 If you ever needed to export images of Navisworks Viewpoints or Snapshots using its API you might have probably incurred it the great article by Xiaodong Liang [Workaround to export image of clash result](http://adndevblog.typepad.com/aec/2012/09/workaround-to-export-image-of-clash-result.html). But the code, using Navisworks COM API, is exporting by default .png images that are just 256x256px big!
 
