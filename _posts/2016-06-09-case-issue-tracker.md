@@ -2,7 +2,7 @@ One of my first dev projects at [CASE](http://case-inc.com) consisted in taking 
 
 > The Issue Tracker is an advanced system that tracks building issues similar to the way issues are tracked in the software world. It was developed internally at CASE and open sourced through WeWork.
 
-It took several iterations, and the great guidance and expertise of Federico Negro and Michael McCune, but after just a few month we had a great tool, something still unique in its type: an issue tracking system for the building industry. Its use quickly took over almost all internal projects where teams could finally create, manage and systematically close all the issues they found.  
+It took several iterations, and the great guidance and expertise of Federico Negro and Michael McCune, but after just a few months we had a great tool, something still unique in its type: an issue tracking system for the building industry. Its use quickly took over almost all internal projects where teams could finally create, manage and systematically close all found issues.  
 CIT was the first application that could connect Revit, Navisworks, Solibri and Tekla together and to a webserver, via the use of a quite new BCF format.
 
 ![](https://github.com/WeConnect/issue-tracker/raw/master/Assets/workflow.jpg)
@@ -13,7 +13,7 @@ You should really read my friend Michael's posts on issue tracking on his blog [
 
 ![](https://github.com/WeConnect/issue-tracker/raw/master/Assets/jirapanel.png)
 
-Despite BCF's immaturity and the several API limitations, CIT was really helping our internal teams to the point that one of our main clients also decided to adopt it on several projects, CIT was really proving itself.
+Despite BCF's immaturity and the several API limitations, CIT was really helping our internal teams to the point that [one of our main clients also decided to adopt it](https://github.com/ArupAus/issue-tracker) on several projects, CIT was really proving itself.
 
 Finally the day has come that CIT is open source! My hope is to integrate it with BCFier and give the industry an even better tool.
 
