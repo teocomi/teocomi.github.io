@@ -1,3 +1,10 @@
+---
+layout: post
+title: "CASE Issue Tracker"
+date: 2010-03-09 07:30
+categories: [tools]
+tags: [case, issue tracker]
+---
 One of my first dev projects at [CASE](http://case-inc.com) consisted in taking what I had learned about [BCF](http://teocomi.com/tags/#bcf) and apply it on real projects. At the time [BCFier](http://bcfier.com), a Revit addin to exchange BCF files I developed as part of my thesis in 2012, was still very primitive but it actually became the foundation of the [CASE Issue Tracker](https://github.com/WeConnect/issue-tracker) (CIT).
 
 > The Issue Tracker is an advanced system that tracks building issues similar to the way issues are tracked in the software world. It was developed internally at CASE and open sourced through WeWork.
@@ -15,7 +22,7 @@ You should really read my friend Michael's posts on issue tracking on his blog [
 
 Despite BCF's immaturity and the several API limitations, CIT was really helping our internal teams to the point that [one of our main clients also decided to adopt it](https://github.com/ArupAus/issue-tracker) on several projects, CIT was really proving itself.
 
-Finally the day has come that CIT is open source! My hope is to integrate it with BCFier and give the industry an even better tool.
+Finally the day has come that CIT is **open source**! My hope is to integrate it with BCFier and give the industry an even better tool.
 
 Start contributing on the [GitHub repo](https://github.com/WeConnect/issue-tracker).
 For more information on the Issue Tracker, check out this PDF [CIT-CASE Issue Tracker.pdf](https://github.com/WeConnect/issue-tracker/raw/master/Assets/CIT-%20CASE%20Issue%20Tracker%2020150129.pdf).
