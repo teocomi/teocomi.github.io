@@ -6,6 +6,9 @@ url: 'http://teocomi.com'
 baseurl: '/'
 google_analytics: 'UA-22197648-1'
 disqus_shortname: 'teocomi'
+name:           'teocomi'
+logo:           '/images/profile.png'
+locale:         'en_us'
 
 author:
   name: 'Matteo Cominetti'
@@ -36,5 +39,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+gems: ['jekyll-paginate'] 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
