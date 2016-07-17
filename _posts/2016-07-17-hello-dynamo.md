@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-date: 2016-07-17T00:00:00.000Z
+date: {}
 categories:
   - dynamo
 tags:
