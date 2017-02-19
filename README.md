@@ -1,6 +1,6 @@
 # README
 
-Source code of [http://teocomi.com/](http://teocomi.com/).
+Source code of [http://teocomi.com/](http://teocomi.com/). Build with `bundler exec jekyll serve`.
 
 # Credits
 
