@@ -11,7 +11,7 @@ tags:
   - c#
 ---
 
-This post contains the handout of the lab I gave on Zero Touch Nodes in C# at the Dynamo User Group Computational Design Workshop in Sydney on the 2nd of December 2017 . 
+This post contains the handout of the lab I gave on Zero Touch Nodes in C# at the Dynamo User Group Computational Design Workshop in Sydney on the 2nd of December 2017 .
 You can find source files on [GitHub](https://github.com/teocomi/dug-dynamo-unchained).
 
 ## Summary
@@ -93,29 +93,29 @@ At the end of this part you'll have generated an empty boilerplate project which
 
 Let’s create a new project:
 
-![image alt text](assets/image_0.png)
+![image](../assets/image_0.png)
 
 Latest versions of Revit (2017/2018) use .NET Framework 4.6 (4.6.1 or 4.6.2), if you are targeting a version prior 2017 [change it accordingly](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/Revit-API/files/GUID-FEF0ED40-8658-4C69-934D-7F83FB5D5B63-htm.html). I used `DynamoUnchained.ZeroTouch` as Project Name and `DynamoUnchained` as Solution Name (a solution can contain multiple projects).
 
-![image alt text](assets/image_1.png)
+![image](../assets/image_1.png)
 
 ### References
 
 To extend Dynamo at a very basic level (eg. manipulating native .NET data types as strings, numbers…) you don’t need to add any reference. But to interact with its geometry types we need to add a few. We’ll be using NuGet, as it makes referencing super easy and it lets you build your node even without Dynamo or Revit installed.
 
-![image alt text](assets/image_2.png)
+![image](../assets/image_2.png)
 
 For now we need `DynamoVisualProgramming.ZeroTouchLibrary` which depends on `DynamoVisualProgramming.DynamoServices` and will be downloaded automatically. Make sure they match your Dynamo version.
 
-![image alt text](assets/image_3.png)
+![image](../assets/image_3.png)
 
 You can see that 4 new dlls have been referenced:
 
-![image alt text](assets/image_4.png)
+![image](../assets/image_4.png)
 
 Select them and set *Copy Local* to *False* in the properties:
 
-![image alt text](assets/image_5.png)
+![image](../assets/image_5.png)
 
 This will avoid unnecessary files in our package.
 
@@ -125,7 +125,7 @@ A zero touch node needs to be loaded by Dynamo manually each time or be added as
 
 Dynamo packages have the structure below:
 
-![image alt text](assets/image_6.png)
+![image](../assets/image_6.png)
 
 * The *bin* folder houses .dll files created with C# or Zero-Touch libraries
 
@@ -143,7 +143,7 @@ We'll need to manually create the pkg.json file, but we'll automate the folder c
 
 * Save as pkg.json
 
-![image alt text](assets/image_7.png)
+![image](../assets/image_7.png)
 
 Then copy/paste the following package description, which is some boilerplate JSON code:
 
@@ -200,7 +200,7 @@ Now right click on the project > Properties > Debug > Start external program > S
 > **Also note:**
 > The start action is a user specific setting, not a project setting, you will have to set it again every time the project is cloned.
 
-![image alt text](assets/image_8.png)
+![image](../assets/image_8.png)
 
 
 ### Hello Dynamo!
@@ -223,17 +223,17 @@ namespace DynamoUnchained.ZeroTouch
 
 Before going ahead to debug our code, we need to change a VS setting. This is not required by Dynamo, but Revit instead, we'll do it now for peace of mind.  Go under *Tools > Options... > Debugging > General > Check "Use Managed Compatibility Mode"*. If Managed Compatibility Mode is unchecked and you try debugging within Revit it will crash during startup.
 
-![1505399901208](assets/1505399901208.png)
+![1505399901208](../assets/1505399901208.png)
 
 Press F5 or click the green play button to start debugging, Dynamo Sandbox should start automatically. Create a new file, and you should see or new package being loaded:
 
-![image alt text](assets/image_9.png)
+![image](../assets/image_9.png)
 
 Now, if you put some breakpoints in VS you’ll be able to get great insights of what’s going on in your code, this will help you fix bugs quicker and improve your dev skills too!
 
 Since we set up our package as a local package, we can actually see it in the list of installed packages:
 
-![image alt text](assets/image_10.png)
+![image](../assets/image_10.png)
 
 ### Naming
 
@@ -264,7 +264,7 @@ I prefer to keep my assembly names unchanged, so let’s add the XML file to the
 ```
 Debug again, and it'll be much better now:
 
-![image alt text](assets/image_11.png)
+![image](../assets/image_11.png)
 
 
 
@@ -289,7 +289,7 @@ public static double AverageNumbers(double Number1, double Number2)
 }
 ```
 
-![image alt text](assets/image_12.png)
+![image](../assets/image_12.png)
 
 As you can clearly understand, the above will only accepts the declared input types, to accept any type you can use the `object` type. For lists/arrays, again, just follow normal C# conventions.
 
@@ -340,7 +340,7 @@ public static Dictionary<string, object> SplitOddEven(List<int> list)
 ```
 
 
-![1501856889450](assets/1501856889450.png)
+![1501856889450](../assets/1501856889450.png)
 
 
 
@@ -405,7 +405,7 @@ We need to add 3 more references manually, as these don't come as NuGet packages
 Right click on references > Add Reference > Browse...
 
 
-![1501862943817](assets/1501862943817.png)
+![1501862943817](../assets/1501862943817.png)
 
 Browse and add the following DLLs, the first to the Revit API:
 
@@ -419,7 +419,7 @@ Then to the Dynamo Revit Nodes and Services
 
 Again, remember to select these newly added references and to set *Copy Local* to *False*.
 
-![1502201542252](assets/1501863170154.png)
+![1502201542252](../assets/1501863170154.png)
 
 As mentioned earlier, since now we'll be building and debugging for Revit, you now need to update your [start action and build events](#Start-Action-and-Build-Events).
 
@@ -433,11 +433,11 @@ Let's create a new `public static class` named `HelloRevit`. We will need to add
 
 If now you create a new method that uses the `Wall` object, for instance, you'll see the following error:
 
-![1502277935072](assets/1502277935072.png)
+![1502277935072](../assets/1502277935072.png)
 
 Visual Studio, isn't sure if we mean a native Revit wall or a Dynamo wall. We can fix that by typing the full namespace as:
 
-![1502278037199](assets/1502278037199.png)
+![1502278037199](../assets/1502278037199.png)
 
 Let's now explore how we can write a node that takes in some Walls and outputs their baseline curves. Write a new function:
 
@@ -586,7 +586,7 @@ namespace DynamoUnchained.ZeroTouch
 ```
 We don't need to get into detail, this class simply converts a string text into lines, note the `[IsVisibleInDynamoLibrary(false)]` attribute that prevents it from showing up in Dynamo. For it to work you need to add a reference to `System.Drawing` in References > Add Reference... > Assemblies > Framework.
 
-![1502715934084](assets/1502715934084.png)
+![1502715934084](../assets/1502715934084.png)
 
 Add these two new functions to the `HelloRevit` class:
 
@@ -646,7 +646,7 @@ Whenever you are using the Revit API to create or modify elements, these methods
 
 After this, the last code example is complete, you can now debug the project and see the node in action, mind to use the right units for *height* and *size*, as in my case where the project is in meters:
 
-![1510609206559](assets/1510609206559.png)
+![1510609206559](../assets/1510609206559.png)
 
 ## Conclusion
 
