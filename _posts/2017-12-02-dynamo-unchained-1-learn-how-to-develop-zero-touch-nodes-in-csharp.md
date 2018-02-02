@@ -10,9 +10,9 @@ tags:
   - dynamo
   - c#
 ---
-# Dynamo Unchained 1
 
-Learn how to develop Zero Touch Nodes in C#.
+This post contains the handout of the lab I gave on Zero Touch Nodes in C# at the Dynamo User Group Computational Design Workshop in Sydney on the 2nd of December 2017 . 
+You can find source files on [GitHub](https://github.com/teocomi/dug-dynamo-unchained).
 
 ## Summary
 

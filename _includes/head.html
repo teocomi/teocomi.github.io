@@ -33,7 +33,7 @@
   <meta name="msapplication-TileImage" content="{{ "images/favicons/ms-icon-144x144.png" | prepend: site.baseurl }}">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | prepend: relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}feed.xml">
   <!-- Start social media tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
