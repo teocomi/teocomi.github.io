@@ -1,4 +1,5 @@
 ---
+title: "Dynamo Unchained 2: Learn how to develop explicit Custom Nodes in C#"
 published: true
 layout: post
 date: 2017-12-02
@@ -138,7 +139,6 @@ namespace DynamoUnchained.ExplicitNode
     }
   }
 }
-
 ```
 In explicit nodes there is no need for a `_DynamoCustomization.xml` file, as the attributes on top of our class will define its category.
 
@@ -154,7 +154,7 @@ You'll also need to replace the namespace in those two files, from `WpfApp` to `
 
 Since our node has a custom UI, we need to create another class which implements the INodeViewCustomization interface. Create a new class named `HelloUINodeView.cs` and add:
 
-```C#
+```c#
 /* dynamo directives */
 using Dynamo.Controls;
 using Dynamo.Wpf;
@@ -182,10 +182,6 @@ If you debug, you'll see the node with the user control embedded, behaving as be
 
 ![55804692-6DA3-4F3A-ADC3-1B7F4C9330B8](../assets/55804692-6DA3-4F3A-ADC3-1B7F4C9330B8.png)
 
-
-
-
-
 ## Explicit custom nodes - part 2
 
 In this final part we are going to add input and output ports to our node and interact with the graph. The following part is going to sound a bit confusing, but that's how Dynamo works in the background.
@@ -212,6 +208,7 @@ namespace DynamoUnchained.ExplicitNode.Functions
   }
 }
 ```
+
 #### The BuildOutputAst Method
 
 Now we can implement `BuildOutputAst` inside of `HelloUI.cs`. First right click on the`DynamoUnchained.ExplicitNode` project and add a reference to `DynamoUnchained.ExplicitNode.Functions`.
@@ -222,7 +219,7 @@ Now we can implement `BuildOutputAst` inside of `HelloUI.cs`. First right click 
 
 Then edit HelloUI.cs:
 
-```C#
+```c#
 using System;
 using System.Collections.Generic;
 /* dynamo directives */
