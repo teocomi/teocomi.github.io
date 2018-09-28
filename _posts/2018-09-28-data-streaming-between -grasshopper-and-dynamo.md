@@ -13,7 +13,7 @@ tags:
   - speckle
 ---
 
-Originally posted on: https://speckle.works/log/speckle-guide/
+Originally posted on: [https://speckle.works/log/speckle-guide/](https://speckle.works/log/speckle-guide/)
 
 
 
@@ -34,7 +34,7 @@ So you want to stream data between Grasshopper and Dynamo? This guide will get y
 
 Speckle for Grasshopper is distributed together with Speckle for Rhino, in a single installer. 
 
-- Download the installer from: https://ci.appveyor.com/api/projects/SpeckleWorks/SpeckleRhino/artifacts/specklerhino.rhi?branch=master&job=Configuration%3DRelease
+- Download the installer from: [https://ci.appveyor.com/api/projects/SpeckleWorks/SpeckleRhino/artifacts/specklerhino.rhi?branch=master&job=Configuration%3DRelease](https://ci.appveyor.com/api/projects/SpeckleWorks/SpeckleRhino/artifacts/specklerhino.rhi?branch=master&job=Configuration%3DRelease)
 - Close Rhino&Grasshopper
 - Run the installer
 - Open Rhino&Grasshopper
@@ -193,7 +193,7 @@ In **Dynamo**, right click on the *node > Rename Inputs...*:
 
 Speckle supports natively many data types like text, numbers, geometry primitives, lines, meshes etc... Here you can find a comprehensive list:
 
-https://github.com/speckleworks/SpeckleDynamo/issues/10
+[https://github.com/speckleworks/SpeckleDynamo/issues/10](https://github.com/speckleworks/SpeckleDynamo/issues/10)
 
 ![1537463244196](../assets/1537463244196.png)
 
