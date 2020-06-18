@@ -1,7 +1,7 @@
 # Site settings
 title: 'teocomi | Matteo Cominetti'
 shorttitle: teocomi
-description: 'Matteo Cominetti is a design technologist focusing on BIM, VDC, parametric design and open standards.'
+description: Sometimes I write about code & tech in the AEC industry.<br/>Co-founder of Speckle.<br/>Formerly Arup, Foster+Partners, WeWork, CASE Inc.
 url: 'http://teocomi.com'
 baseurl: '/'
 google_analytics: 'UA-22197648-1'
