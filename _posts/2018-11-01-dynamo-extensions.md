@@ -82,7 +82,7 @@ Now let's have a look at the code.
 
 The two classes we saw above are respectively implementing the `IExtension` and `IViewExtension` interfaces and the methods/properties they specify.
 
-```c#
+```csharp
 using System.Windows;
 using Dynamo.Extensions;
 
@@ -108,7 +108,7 @@ namespace HelloDynamo
 }
 ```
 
-```c#
+```csharp
 using System.Windows;
 using Dynamo.Wpf.Extensions;
 
@@ -194,7 +194,7 @@ The parameters passed in the `StartUp`, `Loaded` and `Ready` events are what wil
 
 Let's see an example, let's add a menu item. This is pretty simple, the `ViewStartupParams.dynamoMenu` field gives us access to to the Dynamo menu, to add a new menu item we just need. :
 
-```c#
+```csharp
       // let's now create a completely top-level new menu item
       extensionMenu = new MenuItem { Header = "AU Workshop" };
 
@@ -242,7 +242,7 @@ Let's now explore another very useful functionality available via the `ViewStart
 
 With  `ViewStartupParams.CurrentWorkspace` we can access several events:
 
-```c#
+```csharp
 viewLoadedParams.CurrentWorkspaceChanged
 viewLoadedParams.NotificationRecieved
 viewLoadedParams.CurrentWorkspaceModel.NodeAdded
@@ -270,7 +270,7 @@ Let's edit our ViewExtension to make use of them. Create a `NodeTracker.xaml` wi
 
 Where `NodeTracker.xaml.cs` looks like:
 
-```C#
+```csharp
 using System.Windows;
 
 namespace HelloDynamo
@@ -298,7 +298,7 @@ namespace HelloDynamo
 
 Now let's crate a **ViewModel** that will bind to the window and will keep track of the changes to the `CurrentWorkspaceModel`, create a new class `NodeTrackerViewModel.cs`:
 
-```C#
+```csharp
 using System;
 using System.Collections.ObjectModel;
 using Dynamo.Core;
@@ -370,7 +370,7 @@ Each time a node or connector is added or removed we log that event by adding a 
 
 Finally let's edit `ViewExtensionExample.cs` to start the tracking and to open the window when the user clicks on a menu item:
 
-```C#
+```csharp
 using Dynamo.Wpf.Extensions;
 using System;
 using System.Windows;
@@ -498,7 +498,7 @@ Speckle for Dynamo uses the extensions API in variety of ways, to follow this pa
 
 The first and most simple way the extension is used, is to check for updates:
 
-```c#
+```csharp
 public void Loaded(ViewLoadedParams viewLoadedParams)
     {
       //check for updates in the background
@@ -514,7 +514,7 @@ The second thing this extension does is providing access to the accounts manager
 
 As we have seen earlier, this is done by adding a `MenuItem` to the Dynamo menu that opens a new window.
 
-```c#
+```csharp
 speckleAccountsMenu.Click += (sender, args) =>
 {
     var window = new SpecklePopup.MainWindow(false)
@@ -565,7 +565,7 @@ In `NodeManager.xaml`, the `ListView` is the main UI component (the View):
 
 In `NodeManagerViewModel.cs` we have our **ViewModel**:
 
-```c#
+```csharp
 using Dynamo.Core;
 using Dynamo.Graph.Nodes;
 using Dynamo.ViewModels;
@@ -658,7 +658,7 @@ In `SenderViewModel.cs` the method `Send_Click(object sender, RoutedEventArgs e)
 
 That is the same method Dynamo uses when saving a a file to disk.
 
-```c#
+```csharp
 internal void Send_Click(object sender, RoutedEventArgs e)
 {
     Transmitting = true;
@@ -738,7 +738,7 @@ internal void Send_Click(object sender, RoutedEventArgs e)
 
 In `ReceiverViewModel.cs` we have the logic that deserializes that JSON string and recreates the nodes and their connectors, see `UpdateGlobal()`:
 
-```C#
+```csharp
 
     public virtual void UpdateGlobal()
     {
