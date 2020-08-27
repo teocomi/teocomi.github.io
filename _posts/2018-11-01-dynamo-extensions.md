@@ -1,30 +1,23 @@
 ---
-title: "How to create custom Dynamo Extensions"
-published: true
+title: How to create custom Dynamo Extensions
 layout: post
 date: 2018-11-01
 categories:
-  - dynamo
-  - extension
+- dynamo
+- extension
 tags:
-  - dynamo
-  - extension
+- dynamo
+- extension
+
 ---
-
 This post contains the handout of a workshop I gave at Autodesk University on how to create custom Dynamo Extensions, material can be found in the corresponding GitHub Repo: [CBW227912 - Leveraging Speckle in Dynamo](https://github.com/teocomi/DynamoWorkshops/tree/master/2018/Developer/CBW227912%20-%20Leveraging%20Speckle%20in%20Dynamo)
-
-
 
 Join this breakout session and learn how to build an extension! We'll examine an existing one and understand how it works. You'll have the opportunity to modify it, break it, and fix it. We'll see how extensions can have a user interface or just run in the background. We'll see how extensions can be used to interact with nodes on the canvas, with the graph itself and with the Dynamo View Model. We'll also see how to set up Visual Studio to automatically build and bundle the extension with other packages for release on the package manager.
 
-
-
 ## Requirements
 
-- Visual Studio 2015 or 2017
-- Dynamo 2.0.1
-
-
+* Visual Studio 2015 or 2017
+* Dynamo 2.0.1
 
 ## Anatomy of an Extension
 
@@ -44,9 +37,8 @@ We are of course building to Class Library, and note that the **.NET Framework h
 
 References are managed via NuGet, if you were to start a project from scratch you'll just need to add:
 
-- `DynamoVisualProgramming.Core`
-
-- `DynamoVisualProgramming.WpfUILibrary`
+* `DynamoVisualProgramming.Core`
+* `DynamoVisualProgramming.WpfUILibrary`
 
 as the others will be added automatically as dependencies.
 
@@ -72,17 +64,15 @@ There's not really a project structure to follow, but let's see how HelloDynamo 
 
 This sample project contains both a sample Extension and a sample ViewExtension therefore we can find:
 
-- `ExtensionExample.cs` is the code for a sample Extension
-- `ViewExtensionExample.cs` is the code for a sample ViewExtension
-- `HelloDynamo_ExtensionDefinition.xml` is a manifest file which tells Dynamo which class to instantiate to start the Extension
-- `HelloDynamo_ViewExtensionDefinition.xml` is a manifest which tells Dynamo which class to instantiate to start the ViewExtension
+* `ExtensionExample.cs` is the code for a sample Extension
+* `ViewExtensionExample.cs` is the code for a sample ViewExtension
+* `HelloDynamo_ExtensionDefinition.xml` is a manifest file which tells Dynamo which class to instantiate to start the Extension
+* `HelloDynamo_ViewExtensionDefinition.xml` is a manifest which tells Dynamo which class to instantiate to start the ViewExtension
 
 It also contains a:
 
-- `packages.config` used by NuGet
-- `pkg.json` used to define a Dynamo package
-
-
+* `packages.config` used by NuGet
+* `pkg.json` used to define a Dynamo package
 
 ## Hello Dynamo!
 
@@ -90,7 +80,7 @@ Now let's have a look at the code.
 
 ### The IExtension and IViewExtension interfaces
 
-The two classes we saw above are respectively implementing the `IExtension ` and `IViewExtension` interfaces and the methods/properties they specify.
+The two classes we saw above are respectively implementing the `IExtension` and `IViewExtension` interfaces and the methods/properties they specify.
 
 ```c#
 using System.Windows;
@@ -116,7 +106,6 @@ namespace HelloDynamo
     public void Startup(StartupParams sp) { }
   }
 }
-
 ```
 
 ```c#
@@ -143,17 +132,14 @@ namespace HelloDynamo
     public void Startup(ViewStartupParams p) { }
   }
 }
-
 ```
 
 At startup Dynamo calls two methods on the extensions:
 
-- `Startup(StartupParams)` or `Startup(ViewStartupParams)` called when Dynamo starts loading
-- `Ready(ReadyParams)` or `Loaded(ViewLoadedParams)` called when Dynamo is finished loading
+* `Startup(StartupParams)` or `Startup(ViewStartupParams)` called when Dynamo starts loading
+* `Ready(ReadyParams)` or `Loaded(ViewLoadedParams)` called when Dynamo is finished loading
 
 Referring then to this diagram, you should now have an idea of what will happen when we debug (image courtesy of the Dynamo team):
-
-
 
 ![image](https://user-images.githubusercontent.com/2679513/91467507-9159d000-e888-11ea-8d2b-f75256cf5da9.png)
 
@@ -173,36 +159,36 @@ The parameters passed in the `StartUp`, `Loaded` and `Ready` events are what wil
 
 **StartupParams**
 
-- AuthProvider
-- Preferences
-- PathManager
-- LibraryLoader
-- CustomNodeManager
-- DynamoVersion
+* AuthProvider
+* Preferences
+* PathManager
+* LibraryLoader
+* CustomNodeManager
+* DynamoVersion
 
 **ViewStartupParams**
 
-- All the above (it inherits from StartupParams)
-- ExtensionManager
+* All the above (it inherits from StartupParams)
+* ExtensionManager
 
 **ReadyParams**
 
-- WorkspaceModels
-- CurrentWorkspaceModel
-- CommandExecutive
-- NotificationRecieved
-- CurrentWorkspaceChanged
+* WorkspaceModels
+* CurrentWorkspaceModel
+* CommandExecutive
+* NotificationRecieved
+* CurrentWorkspaceChanged
 
 **ViewLoadedParams**
 
-- All the above (it inherits from ReadyParams)
-- DynamoMenu
-- BackGroundPreviewViewModel
-- RenderPackageFactory
-- DynamoWindow
-- CommandExecutive
-- AddMenuItem
-- SelectionCollectionChanged
+* All the above (it inherits from ReadyParams)
+* DynamoMenu
+* BackGroundPreviewViewModel
+* RenderPackageFactory
+* DynamoWindow
+* CommandExecutive
+* AddMenuItem
+* SelectionCollectionChanged
 
 ### Adding a menu item
 
@@ -228,7 +214,7 @@ Let's see an example, let's add a menu item. This is pretty simple, the `ViewSta
 
 Debug and see our new menu item:
 
-![image](https://user-images.githubusercontent.com/2679513/91467594-afbfcb80-e888-11ea-8737-cf0f9e93be00.png)    
+![image](https://user-images.githubusercontent.com/2679513/91467594-afbfcb80-e888-11ea-8737-cf0f9e93be00.png)
 
 ### MVVM
 
@@ -236,23 +222,23 @@ Debug and see our new menu item:
 
 The Model-View-View-Model pattern is very popular and helps to have a good architecture in our projects, if you’re unfamiliar with it or data binding, here is brief introduction.
 
-The MVVM design pattern is similar to the well known MVC pattern in that the *M* (Model) and *V* (View) are *relatively* the same. The only difference resides between the *C* (Controller) and the *VM* (View Model).
+The MVVM design pattern is similar to the well known MVC pattern in that the _M_ (Model) and _V_ (View) are _relatively_ the same. The only difference resides between the _C_ (Controller) and the _VM_ (View Model).
 
 **Model**
 
-Represents the *Data + State + Business logic*. It is not tied to the view nor to the controller, which makes it reusable in many contexts.
+Represents the _Data + State + Business logic_. It is not tied to the view nor to the controller, which makes it reusable in many contexts.
 
 **View**
 
-*Binds* to observable variables and actions exposed by the View Model. It is possible for multiple views to bind to a single View Model.
+_Binds_ to observable variables and actions exposed by the View Model. It is possible for multiple views to bind to a single View Model.
 
 **View Model**
 
-Responsible for wrapping the model and preparing observable data needed by the view. It also provides hooks for the view to pass events to the model. An important thing to keep in mind is that *the View Model is not tied to the view*.
+Responsible for wrapping the model and preparing observable data needed by the view. It also provides hooks for the view to pass events to the model. An important thing to keep in mind is that _the View Model is not tied to the view_.
 
 ### Tracking changes
 
-Let's now explore another very useful functionality available via the `ViewStartupParams` while making use of the MVVM pattern and data binding. 
+Let's now explore another very useful functionality available via the `ViewStartupParams` while making use of the MVVM pattern and data binding.
 
 With  `ViewStartupParams.CurrentWorkspace` we can access several events:
 
@@ -380,7 +366,7 @@ namespace HelloDynamo
 }
 ```
 
-Each time a node or connector is added or removed we log that event by adding a string to our `Actions` collection, in this case an ObservableCollection so that we can bind it to the `ListView` in the` NodeTracker` window.
+Each time a node or connector is added or removed we log that event by adding a string to our `Actions` collection, in this case an ObservableCollection so that we can bind it to the `ListView` in the`NodeTracker` window.
 
 Finally let's edit `ViewExtensionExample.cs` to start the tracking and to open the window when the user clicks on a menu item:
 
@@ -453,24 +439,22 @@ namespace HelloDynamo
 
 ![image](https://user-images.githubusercontent.com/2679513/91467682-cebe5d80-e888-11ea-9ab0-91d0ce708124.png)
 
-
-
 ## Speckle!
 
 ### What is Speckle?
 
 ![image](https://user-images.githubusercontent.com/2679513/91467710-d847c580-e888-11ea-9988-eea00674f675.png)
 
-Speckle is an open source data communication protocol and platform for the AEC industry. 
+Speckle is an open source data communication protocol and platform for the AEC industry.
 
 With Speckle data generated in various design tools can be streamed and exchanged via custom integrations (clients) through the Speckle Server, these so far include plugins for:
 
-- Grasshopper
-- Rhino
-- Dynamo
-- Revit (under development)
-- Blender
-- Unity (experimental)
+* Grasshopper
+* Rhino
+* Dynamo
+* Revit (under development)
+* Blender
+* Unity (experimental)
 
 Let's see a quick example of points and lines exchanged between Dynamo and Grasshopper:
 
@@ -496,21 +480,15 @@ Installing Speckle for Dynamo is very simple, open the package manger and get it
 
 ![image](https://user-images.githubusercontent.com/2679513/91467844-0af1be00-e889-11ea-9e0d-5c29079f6f6b.png)
 
-
-
 Then you can either click Speckle > Manage Accounts or place a new Sender/Receiver node and if you don't have any account you'll be prompted to create one:
 
 ![image](https://user-images.githubusercontent.com/2679513/91467863-1349f900-e889-11ea-8d78-83b863ced0ca.png)
-
-
 
 #### Show me the code!
 
 All the Speckle code is open source with an MIT license, meaning you can do whatever you want with it! All the code is hosted on [GitHub](https://github.com/speckleworks/).
 
 ![image](https://user-images.githubusercontent.com/2679513/91467886-1b099d80-e889-11ea-99e7-656827e7df12.png)
-
-
 
 ### The Speckle Dynamo ViewExtension
 
@@ -552,13 +530,11 @@ The accounts manager is the window that popped up earlier when we registered. It
 
 ![image](https://user-images.githubusercontent.com/2679513/91467919-26f55f80-e889-11ea-908d-f73f8cf8045e.png)
 
-
-
 #### Node Manager
 
 The node manager is a handy utility only possible through an extension, let's see it in action first:
 
-![image](https://user-images.githubusercontent.com/2679513/91467943-2eb50400-e889-11ea-8965-09ae0de37fa3.png)
+![nodemanager](https://user-images.githubusercontent.com/2679513/91470495-af293400-e88c-11ea-90f5-505f3cd40c16.gif)
 
 It lets you easily keep track of the speckle nodes on the workspace. As you can see the selection status and node name are kept in sync between the list and the workspace, this is done automatically through binding.
 
@@ -664,7 +640,6 @@ namespace SpeckleDynamoExtension.ViewModels
     }
   }
 }
-
 ```
 
 Which instead of containing a collection of strings, as we saw earlier, it contains a list of Dynamo nodes, and since these implement `:NotificationObject` the `IsSelected` and `Name` properties are automatically bound, two ways, with the View.
@@ -675,11 +650,9 @@ The `ZoomToFitNodes()` and `DeleteNodes()` methods are called to zoom in or dele
 
 One last example of how speckle is using extensions is given by the Node Sender and Node Receiver. This functionality is quite experimental and please consider it just a proof of what can be achieved combing the powerful extensions API and the real-time data transfer capabilities Speckle offers.
 
-![image](https://user-images.githubusercontent.com/2679513/91467970-3b395c80-e889-11ea-8f96-94a87bbd085e.png)
+![extensionspeckle](https://user-images.githubusercontent.com/2679513/91470660-e566b380-e88c-11ea-8a2c-693a9461816d.gif)
 
-
-
-The node sender and node receiver are two windows with a custom style, `Receiver.xaml` and `Sender.xaml`, that bind to `RecevierViewModel.cs` and `SenderViewModel.cs` respectively. If you open them, you'll see a lot of logic that pertains to Speckle. But let's see how the extensions API is being used. 
+The node sender and node receiver are two windows with a custom style, `Receiver.xaml` and `Sender.xaml`, that bind to `RecevierViewModel.cs` and `SenderViewModel.cs` respectively. If you open them, you'll see a lot of logic that pertains to Speckle. But let's see how the extensions API is being used.
 
 In `SenderViewModel.cs` the method `Send_Click(object sender, RoutedEventArgs e)` is fired when the send button is clicked, it then takes a list of the selected nodes from the `DynamoViewModel` and serializes it together with their connectors as Dynamo Workspace. This is a bit of a hack we are using to easily then recreate the same nodes, with the same properties and GUIDs on the receiver side.
 
@@ -866,16 +839,11 @@ In `ReceiverViewModel.cs` we have the logic that deserializes that JSON string a
         }
       });
     }
-
 ```
-
-
 
 ### Hacking Time
 
 Time to code! You can either play around with the Hello Dynamo extension, the Speckle one or create a new one!
-
-
 
 ## Publishing an extension
 
@@ -919,31 +887,25 @@ Each time Visual Studio built our projects it was at the same time copying some 
   </Target>
 ```
 
-
-
 What that code does is:
 
-- take the .dll .pdb files, the pkg.json and all the files that end with `ExtensionDefinition.xml` 
-- copy them into a folder in `\bin\Project Name` using a Dynamo Package structure
-- then 
-  - if debugging, copy them to the Dynamo Sandbox packages folder
-  - if releasing, copy them to the Dynamo Revit packages folder
+* take the .dll .pdb files, the pkg.json and all the files that end with `ExtensionDefinition.xml`
+* copy them into a folder in `\bin\Project Name` using a Dynamo Package structure
+* then
+  * if debugging, copy them to the Dynamo Sandbox packages folder
+  * if releasing, copy them to the Dynamo Revit packages folder
 
 A Dynamo package is structured like so:
 
 ![image](https://user-images.githubusercontent.com/2679513/91468008-48eee200-e889-11ea-83f0-7539fd9906af.png)
 
-- The *bin* folder houses .dll files, including our view extension dll
-
-- The *dyf* folder houses the custom nodes
-
-- The *extra* folder houses all additional files. Our `*ExtensionDefinition.xml` files are going here (this is not mandatory, but wherever you put your manifest, make sure it points to the right location of your extension dll).
-
-- The *pkg* file is a basic text file defining the package settings
-
+* The _bin_ folder houses .dll files, including our view extension dll
+* The _dyf_ folder houses the custom nodes
+* The _extra_ folder houses all additional files. Our `*ExtensionDefinition.xml` files are going here (this is not mandatory, but wherever you put your manifest, make sure it points to the right location of your extension dll).
+* The _pkg_ file is a basic text file defining the package settings
 
 ### Publishing on the package Manager
 
-Publishing on the package Manager can only be done from Revit as it's linked to your Autodesk account. To do so just switch to Release mode and build. 
+Publishing on the package Manager can only be done from Revit as it's linked to your Autodesk account. To do so just switch to Release mode and build.
 
 The package will be copied to the Dynamo Revit packages folder and you'll be able to click Manage Packages > Publish > Publish online.
