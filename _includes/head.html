@@ -34,7 +34,6 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}">
   <!-- Start social media tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
